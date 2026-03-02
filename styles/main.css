@@ -231,7 +231,7 @@ svg * {
 }
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/inter-600.woff") format("woff2");
+  src: url("../fonts/inter-600.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -1148,7 +1148,7 @@ button[aria-label]::before {
     width: 100%;
     margin-left: calc(var(--container-paddingX) * -1);
     padding: 6.25rem 2.5rem 2.5rem;
-    background-image: url(../../images/resources-preview/bg_tablet.png);
+    background-image: url("../../images/resources-preview/bg_tablet.png");
     background-size: contain;
   }
 }
@@ -1715,14 +1715,6 @@ button[aria-label]::before {
   }
 }
 @media (width > 63.99875rem) {
-  .bordered-grid--3-cols .bordered-grid__item {
-    /**
-        Элемет в 1-й и 2-й колонке
-    */
-    /**
-        Элемет вo 2-й колонке
-    */
-  }
   .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-2), .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1) {
     position: relative;
   }
@@ -1770,11 +1762,6 @@ button[aria-label]::before {
   }
 }
 @media (width > 63.99875rem) {
-  .bordered-grid--4-cols .bordered-grid__item {
-    /**
-     Элементы в 1-й, 2-й и 3-й колонке
-    */
-  }
   .bordered-grid--4-cols .bordered-grid__item:nth-child(4n-3), .bordered-grid--4-cols .bordered-grid__item:nth-child(4n-2), .bordered-grid--4-cols .bordered-grid__item:nth-child(4n-1) {
     position: relative;
   }
@@ -1823,7 +1810,7 @@ button[aria-label]::before {
   --size: 1.5rem;
   width: var(--size);
   height: var(--size);
-  background: url("../../icons/star__gray.svg") center/contain no-repeat;
+  background: url("../icons/star__gray.svg") center/contain no-repeat;
 }
 .rating-view__star.is-active {
   background-image: url("../../icons/star__yellow.svg");
